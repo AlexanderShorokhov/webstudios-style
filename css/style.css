@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root{
+  --master-color: #2196F3;
+}
+
 body {
   font-family: 'Roboto', sans-serif; 
   font-style: normal;
@@ -16,7 +20,6 @@ body {
 a {
   text-decoration: none;
   font-style: normal;
-  color: #757575;
 }
 
 ul {
@@ -26,8 +29,8 @@ ul {
 }
 
 header ul a:hover{
-  color: #2196F3;
-  coursor: poiter;
+  color: var(--master-color);
+  cursor: poiter;
 }
 
 footer {
@@ -37,16 +40,19 @@ footer {
 .logo{
   font-family: 'Raleway', sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #2196F3;
+  color: var(--master-color);
 }
 
 .logo-span{
   color: #000;
 }
+
+.nav-item:hover{
+  color: #2196F3;}
 
 .nav-item{
   font-weight: 500;
@@ -54,6 +60,10 @@ footer {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.header-mail, .header-tel{
+  color: #757575
 }
 
 .effective-solutions{
@@ -70,11 +80,12 @@ footer {
   color: #FFFFFF;
 }
 
-.effective-solutions-button{
-  background-color: #2196F3;
+.effective-solutions-button:hover{
+  background-color: #188CE8;
 }
 
-.effective-solutions-link{
+.effective-solutions-button{
+  background-color: var(--master-color);
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -105,6 +116,10 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.team{
+  background-color:#F5F4FA
 }
 
 .team-title{
@@ -138,7 +153,12 @@ footer {
   color: #fff;
 }
 
+.footer-mail, .footer-tel{
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .address-text {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -160,25 +180,8 @@ footer {
 }
 
 .filter-button:hover{
-  background-color: #2196F3;
+  background-color: var(--master-color);
   color: #FFF;
-}
-
-.filter-link{
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.filter-link:hover{
-  color: #fff;
-}
-
-.project-img{
-
 }
 
 .project-title{
@@ -198,8 +201,3 @@ footer {
   text-align: center;
   color: #757575;
 }
-
-
-
-
-
